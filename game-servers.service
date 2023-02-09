@@ -1,0 +1,14 @@
+[Unit]
+Description=Game Servers Discord Manager
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 main.py
+WorkingDirectory=/home/dano/danos-game-servers
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
