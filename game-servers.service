@@ -3,8 +3,8 @@ Description=Game Servers Discord Manager
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 main.py
-WorkingDirectory=/home/dano/danos-game-servers
+ExecStart=/usr/bin/python3 /opt/danos-game-servers-discord/src/main.py
+WorkingDirectory=/opt/danos-game-servers-discord
 StandardOutput=inherit
 StandardError=inherit
 Restart=always
